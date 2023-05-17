@@ -8,9 +8,9 @@ body {
 }
 
 main {
-    width: 90%;
+    width: 80%;
     min-height: 1800px;
-    float: left;
+    /* float: left; */
     /* padding-left: 70px;
     padding-right: 70px; */
     margin: 0 auto;
@@ -18,7 +18,7 @@ main {
 }
 
 /* 레이아웃 */
-section.wrapper {
+section .wrapper {
     overflow: hidden;
 }
   
