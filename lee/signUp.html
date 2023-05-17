@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- 웹 브라우저 기본 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="./signUp.css" />
+    <script src="./include.js"></script>
+</head>
+<body>
+    <header include-html="./header.html"></header>
+    <div class="signUp_logo">
+        <img src="./logo.png" width="200px">
+    </div>
+    <div class="signUp_box">
+        <div class="input_box">
+            <div class="input_box_name">아이디</div>
+            <input class="info_input" placeholder="">
+        </div>
+        <div class="input_box">
+            <div class="input_box_name">비밀번호</div>
+            <input class="info_input" placeholder="영문, 숫자 포함 8자 이상">
+        </div>
+        <div class="input_box">
+            <div class="input_box_name">비밀번호 확인</div>
+            <input class="info_input" placeholder="">
+        </div>
+    </div>
+    
+</body>
+<script>includeHTML();</script>
+</html>
