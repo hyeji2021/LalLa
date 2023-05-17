@@ -131,7 +131,7 @@ main .grid-container_acution {
 
 /* 슬라이드쇼 */
 .Slidesbackground {
-    width: 1000px;
+    width: 100%;
     margin: 0 auto; /*중앙정렬*/
     padding-bottom: 60px;
 
