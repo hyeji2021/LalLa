@@ -1,3 +1,4 @@
+/* 공통 */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,14 @@
 
 body {
     width: 100%;
+}
+
+.material-icons {
+    color: yellow;
+    font-size: 32px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
 }
 
 main {
@@ -99,12 +108,14 @@ main .grid-container_acution {
 .grid-container_popualr > div {
     background-color: darkgrey;
     text-align: left;
-    /* padding: 90px 0; */
-    padding: 200px 20px 20px;
-    font-size: 15px;
-    color: white;
+    padding: 200px 25px 25px;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
-    border-radius:5%;
+    border-radius:4%;
+}
+
+#popular_title {
+    font-size: 20px;
+    color: white;
 }
 
 #hobby_feature {
