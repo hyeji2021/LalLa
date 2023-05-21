@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 브라우저 기본 스타일을 reset합니다 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <!-- index.html 페이지에 적용할 스타일시트로 main.css로 연결합니다 -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- main.js 연결 -->
+    <script async src="./js/main.js"></script>
+    <!-- 구글 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 헤더 -->
+    <span class="slideshow-container">
+        <div class="Slidesbackground">
+            <div class="mySlides fade">
+                <img src="images/acution bidding.jpeg" alt="slideshow image1" class="slideshow-image">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/popular hobby.png" alt="slideshow image1" class="slideshow-image">
+            </div>
+        </div>
+    </span>
+    <section class="wrapper">
+        <!-- <aside id="left"></aside> -->
+        <main>
+            <div id="large"></div>
+            <!-- 취미 카테고리 -->
+            <div id="hobby_category">
+                <h1 id="main_title">취미 카테고리</h1>
+                <div class="grid-container_category">
+                    <div class="item1">문화·예술 관람
+                        <p>전시회, 영화, 뮤지컬, 연극, 무용, 박물관, 연예인</p>
+                    </div>
+                    <div class="item2">문화·예술 참여
+                        <p>글짓기, 사진 촬영, 드로잉</p>
+                    </div>
+                    <div class="item3">스포츠 관람
+                        <p>야구, 농구, 축구, 배구, 골프, E스포츠</p>
+                    </div>  
+                    <div class="item4">스포츠 참여
+                        <p>축구, 농구, 배드민턴, 탁구, 클라이밍, 등산, 마라톤, 헬스</p>
+                    </div>
+                    <div class="item5">관광 문화
+                        <p>캠핑, 여행, 테마파크, 방탈출, 보드게임, 소풍</p>
+                    </div>
+                    <div class="item6">취미 오락
+                        <p>원예, 뜨개질, 인테리어, 가죽공예, 조향, 다이어리 꾸미기</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 인기 취미 -->
+            <div id="popular">
+                <h1 id="main_title">인기 취미</h1>
+                <div class="grid-container_popualr">
+                    <div class="item1">인기 1등 취미
+                        <span id="hobby_feature">dfsfs</span>
+                    </div>
+                    <div class="item2">인기 2등 취미
+                        <span id="hobby_feature">#활동적 #실외</span>
+                    </div>
+                    <div class="item3">인기 3등 취미
+                        <span id="hobby_feature">#활동적 #실외</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 핫한 경매 -->
+            <div id="acution">
+                <h1 id="main_title">지금 핫한 경매</h1>
+                <div class="grid-container_acution">
+                    <div class="item1">1
+                        <image src="../main/images/soccer ball.jpg" width="100px"></image>
+                    </div>
+                    <div class="item2">2</div>
+                    <div class="item3">3</div>  
+                    <div class="item4">4</div>
+                    <div class="item5">5</div>
+                </div>
+            </div>
+        </main>
+        <!-- <aside id="right"></aside> -->
+      </section>
+</body>
+</html>

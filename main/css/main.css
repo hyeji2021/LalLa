@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    width: 100%;
+}
+
+main {
+    width: 80%;
+    min-height: 1800px;
+    /* float: left; */
+    /* padding-left: 70px;
+    padding-right: 70px; */
+    margin: 0 auto;
+    background: yellow;
+}
+
+/* 레이아웃 */
+section .wrapper {
+    overflow: hidden;
+}
+  
+aside#left {
+    width: 100px;
+    height: 1800px;
+    float: left;
+    background: blue;
+}
+  
+aside#right {
+    width: 100px;
+    height: 1800px;
+    float: right;
+    background: blue;
+}
+
+main #large {
+    width: 100%;
+    height: 100px;
+    background: pink;
+}
+
+/* 그리드 */
+main #hobby_category, #popular, #acution {
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 50px;
+}
+
+p { /*카테고리 소분류*/
+    font-size: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: gray;
+    padding: 0px 20px;
+    padding-top: 10px;
+    line-height: 13px;
+}
+
+main #main_title {
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 50px;
+}
+
+h1 {
+    margin: 10px;
+    margin-left: 25px;
+}
+
+main .grid-container_category {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    background-color: #2196F3;
+    padding: 20px 30px;
+}
+
+main .grid-container_popualr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #2196F3;
+    padding: 20px 30px;
+}
+
+main .grid-container_acution {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    background-color: #2196F3;
+    padding: 20px 30px;
+}
+  
+.grid-container_category > div {
+    background-color: #ECECEC;
+    text-align: center;
+    padding: 130px 0 20px;
+    font-size: 15px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+    border-radius:4%;
+}
+
+.grid-container_popualr > div {
+    background-color: darkgrey;
+    text-align: left;
+    /* padding: 90px 0; */
+    padding: 200px 20px 20px;
+    font-size: 15px;
+    color: white;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+    border-radius:5%;
+}
+
+#hobby_feature {
+    font-size: 10px;
+    font-weight: lighter; /*굵기 조정 필요 */
+    position: bottom;
+}
+
+.grid-container_acution > div{
+    background-color: #ECECEC;
+    text-align: center;
+    padding: 90px 0;
+    font-size: 15px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+    border-radius:4%;
+}
+  
+
+/* 슬라이드쇼 */
+.Slidesbackground {
+    width: 1000px;
+    margin: 0 auto; /*중앙정렬*/
+    padding-bottom: 60px;
+
+}
+.slideshow_image{
+    border-radius:2%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.mySlides {
+    border-radius:3%;
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow_container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
