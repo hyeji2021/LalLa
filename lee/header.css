@@ -23,6 +23,10 @@ header a {
     color: black
 }
 
+header span {
+    font-weight: 600;
+}
+
 header .inner {
     height: 100%;
 }
@@ -52,11 +56,23 @@ header #container nav > ul > li {
     padding: 0 0.5rem;
 }
 
-header span {
-    font-weight: 600;
+#search__box {
+    width: 15rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    border: 3px solid #3333ff;
+    border-radius: 10px;
+    margin-right: 0.5rem;
 }
 
 header #myPage {
-    width: 100px;
+    margin-left: 1rem;
+    width: 200px;
     float: right;
+}
+
+header #myPage > a {
+    color: #3333ff;
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
 }

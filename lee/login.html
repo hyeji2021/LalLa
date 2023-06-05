@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- 웹 브라우저 기본 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="./login.css" />
+    <script src="./include.js"></script>
+</head>
+<body>
+    <header include-html="./header.html"></header>
+    <div class="login_logo">
+        <!-- <img src="./logo.png" width="200px"> -->
+    </div>
+    <div class="login_box">
+        <div class="input_box">
+            <div class="input_box_name">아이디</div>
+            <input class="info_input" placeholder=" 아이디를 입력해주세요">
+        </div>
+        <div class="input_box">
+            <div class="input_box_name">비밀번호</div>
+            <input type="password" class="info_input" placeholder=" 비밀번호를 입력해주세요">
+        </div>
+        <!-- <button class="login_btn">로그인</button> -->
+        <input class="login_btn" type="submit" value="로그인">
+        <div class="login_other">
+            <ul>
+                <li>
+                    <a href="">
+                        <span>비밀번호 찾기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>아이디 찾기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>회원가입</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>includeHTML();</script>
+</html>
