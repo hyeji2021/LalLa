@@ -27,7 +27,7 @@ header .inner {
     height: 100%;
 }
 
-header #container {
+header #header-container {
     display: flex;
     height: 40px;
     width: 100%;
@@ -36,18 +36,18 @@ header #container {
     padding: 0.5rem;
 }
 
-header #container nav {
+header #header-container nav {
     height: 100%;
     display: flex;
     align-items: center; 
     width: 100%;   
 }
 
-header #container nav > ul{
+header #header-container nav > ul{
     margin-left: 40px;
 }
 
-header #container nav > ul > li {
+header #header-container nav > ul > li {
     display: inline-block;
     padding: 0 0.5rem;
 }
