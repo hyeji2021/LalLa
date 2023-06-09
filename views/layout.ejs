@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 브라우저 기본 스타일을 reset합니다 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <!-- index.html 페이지에 적용할 스타일시트로 main.css로 연결합니다 -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- main.js 연결 -->
+    <script async src="./js/main.js"></script>
+    <!-- 구글 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <!-- 구글 Meterial 아이콘 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>LalLa</title>
+</head>
+<body>
+<header>
+    <!--헤더--!>
+     <header>
+        <div class="inner">
+            <div id="header-container">
+                <div id="logo">
+                        <a href="/"><img src=https://github.com/hyeji2021/LalLa/blob/main/lee/logo.png?raw=true" width="100px"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/hobby"> 
+                                <span>취미 둘러보기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""> 
+                                <span>취미 추천 받기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""> 
+                                <span>취미 물품 경매</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""> 
+                                <span>게시판</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <input id="search__box" placeholder=" 검색어를 입력해주세요" />
+                </div>
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <div id="myPage">
+                    <a href="/login">
+                    <!--<span>로그인</span>--!>
+                    <button id="loginButton">로그인</button>  
+                    </a>
+                    <a href="">
+                        <span>회원가입</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 슬라이더 -->
+    <span class="slideshow-container">
+        <div class="Slidesbackground">
+            <div class="mySlides fade">
+                <a href="/hobbyAuction"><img src="https://i.ibb.co/jHDpDp6/acution.jpg" alt="slideshow image1" class="slideshow-image"></a>
+            </div>
+            <div class="mySlides fade">
+                <a href="/hobby"><img src="https://i.ibb.co/xqnXKnj/populate-hobby.jpg" alt="slideshow image2" class="slideshow-image"></a>
+            </div>
+        </div>
+    </span>
+
+    <section class="wrapper">
+        <!-- <aside id="left"></aside> -->
+        <main>
+            <div id="large"></div>
+            <!-- 취미 카테고리 -->
+            <div id="hobby_category">
+                <h1 id="main_title">취미 카테고리</h1>
+                <div class="grid-container_category">
+                        <% for (let i = 0; i < Categorys.length; i++) { %>
+                                <div class="item<%= i + 1 %>">
+                                        <span><%= Categorys[i].categoryName %></span>
+                                </div>
+                        <% } %>
+                </div>
+            </div>
+            <!-- 인기 취미 -->
+            <div id="popular">
+                <h1 id="main_title">인기 취미</h1>
+                <div class="grid-container_popualr">
+                        <% for (let i = 0; i < topThreeHobbies.length; i++) { %>
+                                <div class="item<%= i + 1 %>">
+                                        <span class="material-icons">military_tech</span>
+                                        <span class="hobby-name" style="color: white;"><%= topThreeHobbies[i].hobbyName %></span>
+                                        <span class="hobby_feature" style="font-size: 15px; color:black">#활동>성: <%= topThreeHobbies[i].activity %> #예산: <%= topThreeHobbies[i].budget %></span>
+                                </div>
+                        <% } %>
+                </div>
+            </div>
+            <!-- 핫한 경매 -->
+            <div id="acution">
+                <h1 id="main_title">지금 핫한 경매</h1>
+                <div class="grid-container_acution">
+                        <% for (let i = 0; i < 4; i++) { %>
+                                <div class="item<%= i + 1 %>">
+                                        <p style="font-size: 20px; color:black; padding-bottom:20px;"><%= AuctionItems[i].itemName %></p>
+                                        <p style="font-size: 18px;"><%= AuctionItems[i].itemDetail%></p>
+                                        <p style="font-size: 15px; padding-bottom:15px;">상태: <%= AuctionItems[i].conditions%></p>
+                                        <p style="font-size: 15px; color:darkgray;">시작가 <%= AuctionItems[i].startingPrice%>원에 경매 시작</p>
+                                        <p style="font-size: 15px; color:darkgray;">+<%= AuctionItems[i].askingPrice%>원씩 입찰 가능</p>
+                                        <p style="font-size: 15px;">마감일: <%= AuctionItems[i].endDate %></p>
+                                </div>
+                        <% } %>
+                </div>
+            </div>
+        </main>
+        <!-- <aside id="right"></aside> -->
+      </section>
+</body>
+</html>
