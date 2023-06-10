@@ -72,7 +72,7 @@ main{
     font-size: 15pt;
     font-weight: bolder;
 }
-.big_Wsport{
+.Psport{
     padding: 2%;
     display: grid;
     /* padding-left: 50px; */
@@ -83,7 +83,7 @@ main{
     grid-template-rows: repeat(2, 1fr);
     justify-content:space-between;
 }
-.big_Wsport_element{
+.Psport_element{
     display: grid;
     width: 300px;
     height: 250px;
@@ -95,28 +95,28 @@ main{
     /* background-color: #ffffff; */
 }
 
-.big_Wsport_img{
+.Psport_img{
     display: grid;
     width: 300px;
     height:180px;
     border-radius: 5%;
 }
-.big_Wsport_explain{
+.Psport_explain{
     display: grid;
     width: 300px;
     height:70px;
 
 }
-.big_Wsport_name{
+.Psport_name{
     display: grid;
     padding: 10px 0 0 10px;
     width: 300px;
     height: 20px;
 }
-.big_Wsport_name>p{
+.Psport_name>p{
     font-size: 500pt;
 }
-.big_Wsport_hash {
+.Psport_hash {
     display: grid;
     padding: 5px 0 0 10px;
     width: 300px;
@@ -125,12 +125,12 @@ main{
     grid-auto-flow:row dense;
     font-size: 10pt;
 }
-/* .big_Wsport_hash{
+/* .Psport_hash{
     display: grid;
     padding: 10px 0 0 5px;
     width: 300px;
     height: 70px;
 }
-.big_Wsport_hash>p{
+.Psport_hash>p{
     font-size: 20pt;
 } */
