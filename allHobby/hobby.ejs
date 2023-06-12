@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viewing cultual・art</title>
+   <link rel="icon" href="./img/logo.png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+   <link rel="stylesheet" href="./css/serve.css"/>
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+   <!-- <script defer src="./js/serve.js"></script> -->
+</head>
+
+<body>
+   <header>
+        <div class="inner">
+            <div id="container">
+                <div id="logo">
+                    <a href="/"><img src=https://github.com/hyeji2021/LalLa/blob/main/lee/logo.png?raw=true" width="100px"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/"> 
+                                <span>취미 둘러보기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/"> 
+                                <span>취미 추천 받기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/"> 
+                                <span>취미 물품 경매</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/"> 
+                                <span>게시판</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <form action="search" method="get" class="search-form">
+                        <input type="text" class="search-bar" name="query" placeholder=" 검색어를 입력해주세요" />
+                        <button type="submit" class="search-btn" onclick="">
+                            <img src="https://github.com/hyeji2021/LalLa/blob/main/main/images/search.png?raw=true" alt="검색">
+                        </button>
+                    </form>
+                </div>
+                <div id="myPage">
+                  <a href="./login.html">
+                        <span>로그인</span>
+                    </a>
+                    <a href="">
+                        <span>회원가입</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+   <main>
+    <!-- big_categori -->
+        <section class="big_categori">
+                <div class="grid-container">
+                        <% if (AllHobbies && AllHobbies.length) { %>
+                             <% for (let i = 0; i < AllHobbies.length; i++) { %>
+                                        <div class="item<%= i + 1 %>">
+                                            <span><%= AllHobbies[i].hobbyName %></span>
+                                        </div>
+                                <% } %>
+                        <% } else { %>
+                               <p>취미가 없습니다.</p>
+                        <% } %>
+                </div>
+        </section>
+   </main>
+</body>
+</html>
