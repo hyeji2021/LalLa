@@ -67,14 +67,30 @@
         <section class="big_categori">
                 <div class="grid-container">
                         <% if (AllHobbies && AllHobbies.length) { %>
-                             <% for (let i = 0; i < AllHobbies.length; i++) { %>
+                                <% for (let i = 0; i < AllHobbies.length; i++) { %>
                                         <div class="item<%= i + 1 %>">
-                                            <span><%= AllHobbies[i].hobbyName %></span>
+                                        <p style="font-size: 30px; font-weight:bold; padding-bottom: 20px;"><%= AllHobbies[i].hobbyName %></p>
+                                        <% if (AllHobbies[i].spring > 0) { %>
+                                                <span id="possibleSeason" style="font-size: 15px;">봄 </span>
+                                        <% } %>
+                                        <% if (AllHobbies[i].summer > 0) { %>
+                                                <span id="possibleSeason" style="font-size: 15px;">여름 </span>
+                                        <% } %>
+                                        <% if (AllHobbies[i].fall > 0) { %>
+                                                <span id="possibleSeason" style="font-size: 15px;">가을 </span>
+                                        <% } %>
+                                        <% if (AllHobbies[i].winter > 0) { %>
+                                                <span id="possibleSeason" style="font-size: 15px;">겨울 </span>
+                                        <% } %>
+                                        <p style="font-size: 15px; padding: 11px;">예산: <%= AllHobbies[i].budget %></p>
+                                        <p style="font-size: 15px; padding-bottom: 11px;">소요시간: <%= AllHobbies[i].takeTime %></p>
+                                        <p style="font-size: 15px; padding-bottom: 11px;">활동성: <%= AllHobbies[i].activity %></p>
                                         </div>
                                 <% } %>
                         <% } else { %>
-                               <p>취미가 없습니다.</p>
+                                <p>취미가 없습니다.</p>
                         <% } %>
+
                 </div>
         </section>
    </main>
