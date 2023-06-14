@@ -52,7 +52,7 @@ header span {
     margin-left: 40px;
 }
 
- #container nav > ul > li {
+#container nav > ul > li {
     display: inline-block;
     padding: 0 0.5rem;
 }
@@ -93,17 +93,10 @@ header span {
     float: right;
 }
 
-#myPage > a {
-    color: #3333ff;
-    font-size: 0.8rem;
-    margin-left: 0.3rem;
-}
-
 main{
     width: 80%;
     margin: 0 auto;
 }
-
 
 main .grid-container {
     display: grid;
@@ -117,77 +110,19 @@ main .grid-container {
     background-color: #ECECEC;
     text-align: center;
     padding: 90px 0;
-    font-size: 15px;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
     border-radius:4%;
 }
 
-.big_categori>p{
-    padding: 10px 0 10px 20px;
-    font-size: 15pt;
-    font-weight: bolder;
-}
-.Vcuart{
-    padding: 2%;
-    display: grid;
-    /* padding-left: 50px; */
-    /* padding-right: 50px; */
-    width:100%;
-    height: auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content:space-between;
-}
-.Vcuart_element{
-    display: grid;
-    width: 300px;
-    height: 250px;
-    cursor: pointer;
-    justify-content:space-around;
-    border: 0.5px solid gray;
-    border-radius: 5%;
-    margin: 10px;
-    /* background-color: #ffffff; */
+
+.hobbyName > p {
+        font-size: 50px;
+        color: black;
+        font-weight: bolder;
+        padding-bottom: 20px;
 }
 
-.Vcuart_img{
-    display: grid;
-    width: 300px;
-    height:180px;
-    border-radius: 5%;
+.possibleSeason > span {
+        font-size: 10px;
+        color: red;
 }
-
-.Vcuart_explain{
-    display: grid;
-    width: 300px;
-    height:70px;
-
-}
-.Vcuart_name{
-    display: grid;
-    padding: 10px 0 0 10px;
-    width: 300px;
-    height: 20px;
-}
-.Vcuart_name>p{
-    font-size: 500pt;
-}
-.Vcuart_hash {
-    display: grid;
-    padding: 5px 0 0 10px;
-    width: 300px;
-    height: 50px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow:row dense;
-    font-size: 10pt;
-}
-/* .Vcuart_hash{
-    display: grid;
-    padding: 10px 0 0 5px;
-    width: 300px;
-    height: 70px;
-}
-.Vcuart_hash>p{
-    font-size: 20pt;
-} */
-        
