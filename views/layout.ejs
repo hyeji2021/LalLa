@@ -29,12 +29,53 @@
             </div>
         </div>
     </span>
-        <<section class="wrapper">
+    <section class="wrapper">
         <!-- <aside id="left"></aside> -->
         <main>
             <div id="large"></div>
+            <!-- 취미 카테고리 -->
+            <div id="hobby_category">
+                <h1 id="main_title">취미 카테고리</h1>
+                <div class="grid-container_category">
+                        <% for (let i = 0; i < Categorys.length; i++) { %>
+                                <div class="item<%= i + 1 %> category">
+                                        <span><%= Categorys[i].categoryName %></span>
+                                </div>
+                        <% } %>
+                </div>
+            </div>
+            <!-- 인기 취미 -->
+            <div id="popular">
+                <h1 id="main_title">인기 취미</h1>
+                <div class="grid-container_popualr">
+                        <% for (let i = 0; i < 3; i++) { %>
+                                <div class="item<%= i + 1 %>">
+                                        <span class="material-icons">military_tech</span>
+                                        <span class="hobby-name" style="color: white;"><%= topThreeHobbies[i].hobbyName %></span>
+                                        <span class="hobby_feature" style="font-size: 15px; color:black">#활동성: <%= topThreeHobbies[i].activity %> #예산: <%= topThreeHobbies[i].budget %></span>
+                                </div>
+                        <% } %>
+                </div>
+            </div>
+            <!-- 핫한 경매 -->
+            <div id="acution">
+                <h1 id="main_title">지금 핫한 경매</h1>
+                <div class="grid-container_acution">
+                        <% for (let i = 0; i < 4; i++) { %>
+                                <div class="item<%= i + 1 %>">
+                                        <p style="font-size: 20px; color:black; padding-bottom:20px;"><%= AuctionItems[i].itemName %></p>
+                                        <p style="font-size: 18px;"><%= AuctionItems[i].itemDetail%></p>
+                                        <p style="font-size: 15px; padding-bottom:15px;">상태: <%= AuctionItems[i].conditions%></p>
+                                        <p style="font-size: 15px; color:darkgray;">시작가 <%= AuctionItems[i].startingPrice%>원에 경매 시작</p>
+                                        <p style="font-size: 15px; color:darkgray;">+<%= AuctionItems[i].askingPrice%>원씩 입찰 가능</p>
+                                        <p style="font-size: 15px;">마감일: <%= AuctionItems[i].endDate %></p>
+                                </div>
+                        <% } %>
+                </div>
             </div>
         </main>
+        <!-- <aside id="right"></aside> -->
+      </section>
     <%- include('footer.ejs') %>
 </body>
 </html>
