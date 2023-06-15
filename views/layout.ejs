@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 브라우저 기본 스타일을 reset합니다 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <!-- index.html 페이지에 적용할 스타일시트로 main.css로 연결합니다 -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- main.js 연결 -->
+    <script async src="main.js"></script>
+    <!-- 구글 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <!-- 구글 Meterial 아이콘 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>LAlLA</title>
+</head>
+<body>
+<%- include('header.ejs') %>
+    <!-- 슬라이더 -->
+    <span class="slideshow-container">
+        <div class="Slidesbackground">
+            <div class="mySlides fade">
+                <a href="/auction"><img src="https://i.ibb.co/jHDpDp6/acution.jpg" alt="slideshow image1" class="slideshow-image"></a>
+            </div>
+            <div class="mySlides fade">
+                <a href="/hobby"><img src="https://i.ibb.co/xqnXKnj/populate-hobby.jpg" alt="slideshow image2" class="slideshow-image"></a>
+            </div>
+        </div>
+    </span>
+        <<section class="wrapper">
+        <!-- <aside id="left"></aside> -->
+        <main>
+            <div id="large"></div>
+            </div>
+        </main>
+    <%- include('footer.ejs') %>
+</body>
+</html>
+
+<!-- 취미 카테고리 클릭  -->
+<script>
+  const div = document.getElementsByClassName("category");
+  for(let i = 0; i < div.length; i++) {
+    div[i].addEventListener("click", openServePage.bind(null, i+1));
+  }
+  function openServePage(c) {
+    const categoryID = c; // 전달할 카테고리 값
+    const url = `/serve/?category=${categoryID}`;
+    window.location.href = url; // 현재 창으로 열기
+  }
+</script>
