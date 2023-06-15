@@ -6,26 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 브라우저 기본 스타일을 reset합니다 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-    <link rel="stylesheet" href="./serve.css" />
+    <link rel="stylesheet" href="/serve2.css" />
+    <link rel="stylesheet" href="./header.css" />
     <!-- 구글 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
     <!-- 구글 Meterial 아이콘 -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>LalLa</title>
 </head>
-
 <body>
+    <header>
+        <div class="inner">
+            <div id="header-container">
+                <div id="logo">
+                    <a href="/"><img src=https://github.com/hyeji2021/LalLa/blob/main/lee/logo.png?raw=true" width="100px"></a>
+                </div>
+    </header>
+    <main> 
     <div class="serve-inner">
         <!-- <div class="serve_element">
             <div>클라이밍</div>
             <div>#활동적 #실내</div>
         </div>-->
         <h1>서브페이지</h1>
+        <div class="grid-container">
         <% for(let i = 0; i < serveHobby.length; i++) { %>
-            <div class="serve_element">
-                <div><%= serveHobby[i].hobbyName %></div>
-            </div>
+                <div class="item<%= i + 1 %>">
+                                        <p style="font-size: 30px; font-weight:bold; padding-bottom: 20px;"><%= serveHobby[i].hobbyName %></p>
+                                        <% if (serveHobby[i].spring > 0) { %>
+                                                <span id="possibleSeason" style="font-size: 15px;">봄 </span>
+                                        <% } %>
+                                        <% if (serveHobby[i].summer > 0) { %>
+                                                <span id="possibleSeason" style="font-size: 15px;">여름 </span>
+                                        <% } %>
+                                        <% if (serveHobby[i].fall > 0) { %>
+                                                <span id="possibleSeason" style="font-size: 15px;">가을 </span>
+                                        <% } %>
+                                        <% if (serveHobby[i].winter > 0) { %>
+                                                <span id="possibleSeason" style="font-size: 15px;">겨울 </span>
+                                        <% } %>
+                                        <p style="font-size: 15px; padding-bottom: 11px;">예산: <%= serveHobby[i].budget %></p>
+                                        <p style="font-size: 15px; padding-bottom: 11px;">소요시간: <%= serveHobby[i].takeTime %></p>
+                                        <p style="font-size: 15px; padding-bottom: 11px;">활동성: <%= serveHobby[i].activity %></p>
+              </div>
         <% } %>
+        </div>
     </div>
+    </main>
 </body>
 </html>
