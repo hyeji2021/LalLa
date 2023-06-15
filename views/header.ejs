@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <!-- 웹 브라우저 기본 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- 구글 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <!-- 구글 Meterial 아이콘 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="./header.css" />
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div id="container">
+                <div id="logo">
+                        <a href="/"><img src="https://github.com/hyeji2021/LalLa/blob/main/public/images/logo.png?raw=true" width="100px"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/hobby"> 
+                                <span>취미 둘러보기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/"> 
+                                <span>취미 추천 받기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/auction"> 
+                                <span>취미 물품 경매</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/"> 
+                                <span>게시판</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <form action="search" method="get" class="search-form">
+                        <input type="text" class="search-bar" name="query" placeholder=" 검색어를 입력해주세요" />
+                        <button type="submit" class="search-btn" onclick="">
+                            <img src="https://github.com/hyeji2021/LalLa/blob/main/public/images/search.png?raw=true" alt="검색">
+                        </button>
+                    </form>
+                </div>
+                <div id="myPage">
+                    <a href="/login">
+                        <span>로그인</span>
+                    </a>
+                    <a href="/signUp">
+                        <span>회원가입</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
