@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 브라우저 기본 스타일을 reset합니다 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="./serve.css" />
+    <!-- 구글 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <!-- 구글 Meterial 아이콘 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>LalLa</title>
+</head>
+
+<body>
+    <div class="serve-inner">
+        <!-- <div class="serve_element">
+            <div>클라이밍</div>
+            <div>#활동적 #실내</div>
+        </div>-->
+        <h1>서브페이지</h1>
+        <% for(let i = 0; i < serveHobby.length; i++) { %>
+            <div class="serve_element">
+                <div><%= serveHobby[i].hobbyName %></div>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
