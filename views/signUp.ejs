@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- 웹 브라우저 기본 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="./signUp.css" />
+    <script src="./include.js"></script>
+</head>
+<body>
+   <%- include('header.ejs') %>
+        <div class="signUp_logo">
+   <img src="https://github.com/hyeji2021/LalLa/blob/main/public/images/logo.png?raw=true" width="200px"></a>
+    </div>
+    <div class="signUp_box">
+        <div class="input_box">
+            <div class="input_box_name">아이디</div>
+            <input class="_input info" placeholder="">
+        </div>
+        <div class="input_box">
+            <div class="input_box_name">비밀번호</div>
+            <input class="_input info" placeholder="영문, 숫자 포함 8자 이상" type="password">
+        </div>
+        <div class="input_box">
+            <div class="input_box_name">비밀번호 확인</div>
+            <input class="_input info" placeholder="" type="password">
+        </div>
+        <div class="input_box">
+            <div class="input_box_name">휴대전화</div>
+            <input class="_input phone" placeholder="휴대전화 번호 입력">
+            <button class="phone_btn">인증</button>
+            <input class="_input phone" placeholder="인증번호 입력">
+            <button class="phone_btn">확인</button>
+        </div>
+        <div class="input_box">
+            <div class="input_box_name">이름</div>
+            <input class="_input info" placeholder="">
+        </div>
+        <div class="input_box">
+            <div class="input_box_name">닉네임</div>
+            <input class="_input info" placeholder="">
+        </div>        <div class="input_box">
+            <div class="input_box_name">생년월일</div>
+            <input type="date" name="birth" />
+        </div>
+        <div class="input_box">
+            <div class="input_box_name">성별</div>
+            <form class="gender_form">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">남자</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">여자</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">기타</label>
+            </form>
+            <!-- <button class="gender_btn">남자</button>
+            <button class="gender_btn">여자</button>
+            <button class="gender_btn">선택안함</button> -->
+        </div>
+        <input class="signUp_btn" type="submit" value="가입하기">
+    </div>  
+    <!-- <footer include-html="./footer.html"></footer> -->
+</body>
+<script>includeHTML();</script>
+</html>
